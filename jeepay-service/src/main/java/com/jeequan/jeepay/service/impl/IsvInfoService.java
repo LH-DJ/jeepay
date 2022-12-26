@@ -71,4 +71,8 @@ public class IsvInfoService extends ServiceImpl<IsvInfoMapper, IsvInfo> {
             throw new BizException("删除服务商失败");
         }
     }
+
+    public static void fun(){
+        String aa = "aa";
+    }
 }
