@@ -57,6 +57,8 @@ public class IsvInfoService extends ServiceImpl<IsvInfoMapper, IsvInfo> {
             throw new BizException("该服务商下存在商户，不可删除");
         }
 
+        
+
         // 2.删除当前服务商支付接口配置参数
         payInterfaceConfigService.remove(PayInterfaceConfig.gw()
                 .eq(PayInterfaceConfig::getInfoId, isvNo)
